@@ -1,0 +1,200 @@
+.body1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffefe9;
+}
+
+.body2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #CCD3CA;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-text1 {
+    font-size: 22px;
+    color: #FF8DC7;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 16px;
+    color: #FF8DC7;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    text-align: center;
+}
+
+.p1 {
+    text-align: center;
+    font-size: 16px;
+    color: #FF8DC7;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.main-text2 {
+    font-size: 20px;
+    color: #3D3522;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    text-align: center;
+}
+
+.h22 {
+    font-size: 18px;
+    color: #3D3522;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    text-align: center;
+}
+
+.main-text3 {
+    font-size: 18px;
+    color: #FF8DC7;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    text-align: center;
+}
+.button1 {
+    --primary-color: #FFACC7;
+    --secondary-color: #fff;
+    --hover-color: #FFB9B9;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+  
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+  
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+  
+button:hover {
+    background-color: var(--hover-color);
+}
+  
+button:hover .arrow {
+    background: var(--secondary-color);
+}
+  
+button:hover .arrow:before {
+    right: 0;
+}
+
+.button2 {
+    --primary-color: #3D3522;
+    --secondary-color: #fff;
+    --hover-color: #5E5240;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+  
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+  
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+  
+button:hover {
+    background-color: var(--hover-color);
+}
+  
+button:hover .arrow {
+    background: var(--secondary-color);
+}
+  
+button:hover .arrow:before {
+    right: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
